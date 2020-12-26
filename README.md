@@ -73,5 +73,13 @@ The adequate migration is created using the command :
 
 `php artisan migrate`
 
+**Update**
 
+The creation command must be (see 'Additional notes'):
+
+`php artisan make:migration create_people_table --create=people`
+
+## Additional notes
+
+It seems that Laravel is so cever that it tries to look for 'people' as a table name (plural of person). 
 
